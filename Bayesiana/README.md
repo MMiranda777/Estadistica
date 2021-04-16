@@ -21,7 +21,17 @@ Para efectos de este proyecto, se analizó la serie de tiempo del precio promedi
 ## - Programación:
 A continuación se presenta un resumen de las funciónes más relevantes que se ocuparon y sus objetivos:
 
-
+|      Función     |                                                                                                                                 Descripción                                                                                                                                 |
+|:----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    `bptest()`    | • Para las series de tiempo necesitamos que tengan varianza cte  • heterocedasticidad: la varianza de los errores no es constante  =====Test de Breusch-Pagan  H0=los datos son homoscedásticos. (los errores tienen varianza constante)  H1=los datos son heterocedásticos |
+|    `BoxCox()`    | Transformación de BoxCox para volver homoscedástica(de varianza constante) la serie de tiempo.                                                                                                                                                                              |
+|   `adf.test()`   | • Para hacer ARMAS o ARIMA es necesaria la estacionariedad en la serie =====Test de Dickey-Fuller H0=no estacionaria H1=estacionaria                                                                                                                                        |
+|  `auto.arima()`  | Ajusta el mejor modelo ARIMA basado en los valores de AIC,  AICc o BIC                                                                                                                                                                                                      |
+|  `jags.model()`  | is used to create an object representing a Bayesian graphical model, specified with a BUGS-language description of the prior distribution, and a set of data.                                                                                                               |
+| `coda.samples()` | Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
+|    `Sarima()*`   | Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
+|   `varstan()*`   | Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
+|   `forecast()*`  | Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
 
 
 El código completo puede consultarse en el archivo [`Serie de Tiempo_Bay.R`](https://github.com/MMiranda777/Estadistica/blob/main/Bayesiana/Serie%20de%20Tiempo_Bay.r).
