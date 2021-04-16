@@ -6,7 +6,7 @@ Repositorio con proyectos de estadística con modelos bayesianos, regresiones li
 
 <img src="Bayesiana/Media/bay1.png" width="50%" style="display: block; margin: auto;" /><img src="Bayesiana/Media/bay2.png" width="50%" style="display: block; margin: auto;" />
 
-## [Serie de Tiempo Bayesiana v.s ST Normal](https://github.com/MMiranda777/Estadistica/tree/main/Bayesiana)
+## [Serie de Tiempo Bayesiana  **V.S**  ST Normal](https://github.com/MMiranda777/Estadistica/tree/main/Bayesiana)
 
 
 
