@@ -30,10 +30,10 @@ A continuación se presenta un resumen de las funciónes más relevantes que se 
 |  `auto.arima()`  |Ajusta el mejor modelo ARIMA basado en los valores de AIC,  AICc o BIC.|
 |  `jags.model()`  |Se utiliza para crear una representación gráfica de un modelo Bayesiano y un conjunto de datos. La distribución inicial se programa en lenguaje BUGS.|
 | `coda.samples()` |Esta es una función contenedora para `jags.samples` que establece un monitor de seguimiento para todos los nodos solicitados, actualiza el modelo y convierte la salida en un solo objeto `mcmc.list`.|
-|    `Sarima()*`   |Constructor del modelo SARIMA para estimación bayesiana en Stan~4~ . <br> >Stan is a C++ library for Bayesian inference using the No-U-Turn sampler (a variant of Hamiltonian Monte Carlo) or frequentist inference via optimization. |
+|    `Sarima()*`   |Constructor del modelo SARIMA para estimación bayesiana en Stan <sup>1</sup> .|
 |   `varstan()*`   |Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
 |   `forecast()*`  |Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
-
+> Stan is a C++ library for Bayesian inference using the No-U-Turn sampler (a variant of Hamiltonian Monte Carlo) or frequentist inference via optimization.
 
 El código completo puede consultarse en el archivo [`Serie de Tiempo_Bay.R`](https://github.com/MMiranda777/Estadistica/blob/main/Bayesiana/Serie%20de%20Tiempo_Bay.r).
 
