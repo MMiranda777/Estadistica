@@ -52,31 +52,7 @@ Se trataron de ajustar distintos modelos con la paquetería `bayesforecast`, la 
 
 Comparando estos modelos se llegó a la conclusión de que el mejor ajuste era el ARIMA(1,0,2), que de hecho fue el sugerido por el comando `auto.sarima`.
 
-Se concluyó no hubo un unico mejor modelo para el ajuste de la serie de tiempo. Se intento trabajar con
-el mismo modelo obtenido en el enfoque clasico para la parte bayesiana pero para estos metodos no resultaba
-ser la mejor opcion. Pudimos ver la importancia de tener distintas formas de abordar los modelados y lo
-difcil que puede ser llegar a un buen ajuste, sobre todo en la forma bayesiana porque requiere mas trabajo
-computacional que tal vez no fue mucho con nuestros datos pero al tener bases con millones de datos se
-puede complicar el estar probando distintos modelos.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Se concluyó no había un único mejor modelo para el ajuste de la serie de tiempo. Se intentó trabajar con el mismo modelo obtenido en el enfoque clásico para la parte bayesiana pero no resultaba ser la mejor opción. Se vió la importancia de tener distintas formas de abordar los modelados y lo difícil que es llegar a un buen ajuste, sobre todo en la forma bayesiana porque requiere más trabajo computacional.
 
 
 
