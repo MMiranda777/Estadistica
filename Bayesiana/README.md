@@ -30,7 +30,7 @@ A continuación se presenta un resumen de las funciónes más relevantes que se 
 |  `auto.arima()`  |Ajusta el mejor modelo ARIMA basado en los valores de AIC,  AICc o BIC.|
 |  `jags.model()`  |Se utiliza para crear una representación gráfica de un modelo Bayesiano y un conjunto de datos. La distribución inicial se programa en lenguaje BUGS.|
 | `coda.samples()` |Esta es una función contenedora para `jags.samples` que establece un monitor de seguimiento para todos los nodos solicitados, actualiza el modelo y convierte la salida en un solo objeto `mcmc.list`.|
-|    `Sarima()*`   |Constructor del modelo SARIMA para estimación bayesiana en Stan. >Stan is a C++ library for Bayesian inference using the No-U-Turn sampler (a variant of Hamiltonian Monte Carlo) or frequentist inference via optimization. |
+|    `Sarima()*`   |Constructor del modelo SARIMA para estimación bayesiana en Stan. <br> >Stan is a C++ library for Bayesian inference using the No-U-Turn sampler (a variant of Hamiltonian Monte Carlo) or frequentist inference via optimization. |
 |   `varstan()*`   |Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
 |   `forecast()*`  |Ajusta el mejor modelo ARIMA basado en los valores de AIC,                                                                                                                                                                                                                  |
 
