@@ -14,6 +14,21 @@ Repositorio con proyectos de estadística con modelos bayesianos, regresiones li
 ----------------------------------------------------------------------------
 
 
+## Coming soon... :soon:
 
+Modelos de:
+ - Regresión logística para pacientes con Parkinson
+ - Análisis demográfico de Jaen, España
+ - Portafolios de inversión
+ - Gráficas de Covid
+
+
+
+
+
+
+
+
+> Gracias por leer c: 
 
 
