@@ -22,8 +22,8 @@ Para efectos de este proyecto, se analizó la serie de tiempo del precio promedi
 Se utilizaron las siguientes paqueterías: `tseries`,`coda`,`forecast`,`lmtest`,`astsa`,`rjags` y `bayesforecast`.
 A continuación se presenta un resumen de las funciónes más relevantes que se ocuparon y sus objetivos:
 
-|      Función     |                                                                                                                                 Descripción                                                                                                                                 |
-|:----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|      Función     |       Descripción                                                    |
+|:----------------:|:--------------------------------------------------------------------:|
 |    `bptest()`    |• Para las series de tiempo necesitamos que tengan varianza cte <br> • heterocedasticidad: la varianza de los errores no es constante <br> =====Test de Breusch-Pagan <br> H0=los datos son homoscedásticos. (los errores tienen varianza constante) <br> H1=los datos son heterocedásticos.|
 |    `BoxCox()`    |Transformación de BoxCox para volver homoscedástica(de varianza constante) la serie de tiempo.|
 |   `adf.test()`   |• Para hacer ARMAS o ARIMA es necesaria la estacionariedad en la serie <br> =====Test de Dickey-Fuller <br> H0=no estacionaria <br> H1=estacionaria.|
