@@ -20,6 +20,7 @@ Para efectos de este proyecto, se analizó la serie de tiempo del precio promedi
 
 ## - Programación:
 Se utilizaron las siguientes paqueterías: `tseries`,`coda`,`forecast`,`lmtest`,`astsa`,`rjags` y `bayesforecast`.
+
 A continuación se presenta un resumen de las funciónes más relevantes que se ocuparon y sus objetivos:
 
 |      Función     |       Descripción                                                    |
@@ -43,16 +44,19 @@ Al ser una serie de tiempo, son más relevantes los datos más recientes. Para l
 **Modelo Clásico**
 
 Después de hacer los análisis correspondientes, esta fue la predicción que se obtuvo para el modelo clásico:
+<img src="Media/senorm.png" width="50%" style="display: block; margin: auto;" />
 
 **Modelo Bayesiano**
 
 Se trataron de ajustar distintos modelos con la paquetería `bayesforecast`, la mayoría no pasaba la prueba de la varianza constante por lo que se decidió tomar los que tuvieran mayor _p-value_ para esta prueba y que no tuvieran correlación en los parámetros. Se obtuvieron los siguientes modelos: ARIMA(2,0,3), ARIMA(3,0,3), ARIMA(4,0,2), ARIMA(1,0,2) y ARIMA(2,0,1). A continuzación se muestra una comparación de los 5 modelos.
 
-
+<img src="Media/bay.png" width="50%" style="display: block; margin: auto;" />
 
 Comparando estos modelos se llegó a la conclusión de que el mejor ajuste era el ARIMA(1,0,2), que de hecho fue el sugerido por el comando `auto.sarima`.
 
-Se concluyó no había un único mejor modelo para el ajuste de la serie de tiempo. Se intentó trabajar con el mismo modelo obtenido en el enfoque clásico para la parte bayesiana pero no resultaba ser la mejor opción. Se vió la importancia de tener distintas formas de abordar los modelados y lo difícil que es llegar a un buen ajuste, sobre todo en la forma bayesiana porque requiere más trabajo computacional.
+<img src="Media/sebay.png" width="50%" style="display: block; margin: auto;" />
+
+Se concluyó no había un único mejor modelo para el ajuste de la serie de tiempo. Se intentó trabajar con el mismo modelo obtenido en el enfoque clásico para la parte bayesiana pero no resultó ser la mejor opción. Se vió la importancia de tener distintas formas de abordar los modelados y lo difícil que es llegar a un buen ajuste, sobre todo en la forma bayesiana porque requiere más trabajo computacional.
 
 
 
