@@ -41,13 +41,41 @@ El código completo puede consultarse en el archivo [`Serie de Tiempo_Bay.R`](ht
 Al ser una serie de tiempo, son más relevantes los datos más recientes. Para los datos a partir del 2018 tenemos que la media es de 990,359 entonces esperaríamos que nuestras predicciones ronden este valor. El modelo Clásico y Bayesiano se compararán en función de los criterios de bondad de ajuste, y se determina cuál ofrece un mejor modelo.
 
 **Modelo Clásico**
+
 Después de hacer los análisis correspondientes, esta fue la predicción que se obtuvo para el modelo clásico:
 
 **Modelo Bayesiano**
-Se trataron de ajustar distintos modelos con la paquetería `bayesforecast`, la mayoría no pasaba la prueba de la varianza constante por lo que se decidió tomar los que tuvieran mayor _p-value_ para esta prueba y que no tuvieran correlación en los parámetros. Se obtuvieron los siguientes modelos:
-ARIMA(2,0,3), ARIMA(3,0,3), ARIMA(4,0,2), ARIMA(1,0,2) y ARIMA(2,0,1).
 
-Después de hacer los análisis correspondientes, esta fue la predicción que se obtuvo para el modelo Bayesiano:
+Se trataron de ajustar distintos modelos con la paquetería `bayesforecast`, la mayoría no pasaba la prueba de la varianza constante por lo que se decidió tomar los que tuvieran mayor _p-value_ para esta prueba y que no tuvieran correlación en los parámetros. Se obtuvieron los siguientes modelos: ARIMA(2,0,3), ARIMA(3,0,3), ARIMA(4,0,2), ARIMA(1,0,2) y ARIMA(2,0,1). A continuzación se muestra una comparación de los 5 modelos.
+
+
+
+Comparando estos modelos se llegó a la conclusión de que el mejor ajuste era el ARIMA(1,0,2), que de hecho fue el sugerido por el comando `auto.sarima`.
+
+Se concluyó no hubo un unico mejor modelo para el ajuste de la serie de tiempo. Se intento trabajar con
+el mismo modelo obtenido en el enfoque clasico para la parte bayesiana pero para estos metodos no resultaba
+ser la mejor opcion. Pudimos ver la importancia de tener distintas formas de abordar los modelados y lo
+difcil que puede ser llegar a un buen ajuste, sobre todo en la forma bayesiana porque requiere mas trabajo
+computacional que tal vez no fue mucho con nuestros datos pero al tener bases con millones de datos se
+puede complicar el estar probando distintos modelos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
