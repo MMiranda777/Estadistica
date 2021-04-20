@@ -12,6 +12,7 @@ Este proyecto tiene como objetivo desarrollar una **Serie de Tiempo Bayesiana**,
 
 **:warning: Spoiler: :warning:** No hay un único mejor modelo :dizzy_face:
 
+
 > _**:pushpin:**_ : Si te interesó el proyecto, te invito a leer el abstract completo :smile: : [`Abstract ST Bayesiana`](https://github.com/MMiranda777/Estadistica/blob/main/Bayesiana/README.md) (3 min de lectura)
 ----------------------------------------------------------------------------
 
